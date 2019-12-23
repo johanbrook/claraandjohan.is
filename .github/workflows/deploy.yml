@@ -26,4 +26,3 @@ jobs:
           FOLDER: src
           # The build script the action should run prior to deploying.
           BUILD_SCRIPT: echo "N/A"
-          CNAME: claraandjohan.is
