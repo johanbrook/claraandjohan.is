@@ -19,6 +19,8 @@ jobs:
           NODE_ENV: production
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # The branch the action should deploy from.
+          BASE_BRANCH: master
           # The branch the action should deploy to.
           BRANCH: gh-pages
           # The folder the action should deploy.
