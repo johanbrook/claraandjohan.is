@@ -1,0 +1,165 @@
+@import "https://fonts.googleapis.com/css?family=Caveat:400,700|Open+Sans:400,400i,700,700i&display=swap";
+@import "./normalize.css";
+
+:root {
+  --font-size: 16px;
+  --leading: 1.5;
+
+  --text-color: #222;
+  --bg-color: #fffef3;
+  --accent-color: #694e92;
+
+  --font-sans: "Open Sans", sans-serif;
+  --font-cursive: "Caveat", cursive;
+  --font-family: var(--font-sans);
+
+  --f0: 4.5rem;
+  --f1: 2.5rem;
+  --f2: 1.8rem;
+  --f3: 1.3rem;
+  --f4: 1.1rem;
+  --f5: 1rem;
+  --f6: .9rem;
+  --f7: .875rem;
+
+  --content-width: 32rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: normal var(--font-size)/var(--leading) var(--font-family);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html.frame {
+  background-color: #d0c4e2;
+  padding: 1rem;
+}
+
+html.frame body {
+  border-radius: 3px;
+}
+
+body {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-family: var(--font-cursive);
+  font-size: var(--f0);
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+/* Helpers */
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.opacity-80 {
+  opacity: .8;
+}
+
+.font-cursive {
+  font-family: var(--font-cursive);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1 0 auto;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tc {
+  text-align: center;
+}
+
+.f0 {
+  font-size: var(--f0);
+}
+
+.f1 {
+  font-size: var(--f1);
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.lh-title {
+  line-height: 1.25;
+}
+
+.btn {
+  display: inline-block;
+  font-size: var(--f3);
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: .6em 1.5em;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+  border-color: #c9c9c9;
+}
